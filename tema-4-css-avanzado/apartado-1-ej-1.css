@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(97, 92, 92);
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 30px;
+}
+
+#cuadricula {
+    text-align: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    height: 400px;
+}
+
+.item{
+    background-color: var(--color);
+    border-radius: 10px;
+}
+
+p{
+    color: white;
+}
+
+#gridGaps {
+    padding: 30px 30px;
+}
+
+label{
+    margin-right: 50px;
+}
