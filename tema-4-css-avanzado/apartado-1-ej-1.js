@@ -5,6 +5,7 @@ window.onload = () => {
     const inputColum = document.getElementsByName('gridColumnGap')[0];
     const spanRow = document.getElementById('spangridRowGap');
     const spanColumn = document.getElementById('spangridColumnGap');
+    const cuadricula = document.getElementById('cuadricula');
 
     inputRow.value = 1;
     inputColum.value = 1;
@@ -16,11 +17,13 @@ window.onload = () => {
         const spanInputRow = evento.target.previousElementSibling.firstElementChild;
         spanInputRow.textContent = valorCambiado;
         spanRow.textContent = valorCambiado;
+        cuadricula.style.rowGap = `${valorCambiado}px`;
     });
     inputColum.addEventListener("input",(evento) => {
         const valorCambiado = evento.target.value;
         const spanInputColumn = evento.target.previousElementSibling.firstElementChild;
         spanInputColumn.textContent = valorCambiado;
         spanColumn.textContent = valorCambiado;
+        cuadricula.style.columnGap = `${valorCambiado}px`;
     });
 } //Fin del window onload()
